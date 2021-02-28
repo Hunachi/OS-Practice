@@ -1,0 +1,3 @@
+     1 00000000 2A<rep 8h>              passwd: times 8 db '*'
+     2 00000008 08                      pass_len db $ - passwd
+     3 00000009 [08]                        db pass_len

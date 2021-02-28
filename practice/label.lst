@@ -1,0 +1,9 @@
+     1                                  g_label_A:
+     2                                  .l_label:
+     3 00000000 EBFE                        jmp .l_label ; 2行目にjmp
+     4                                  
+     5                                  g_label_B:
+     6 00000002 EB02                        jmp .l_label ; 8行目にjmp
+     7                                      jmp .g_label_A.l_label ; 2行目にjmp
+     7          ******************       error: symbol `g_label_B.g_label_A.l_label' not defined
+     8                                  .l_label:

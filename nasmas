@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "引数: $1"
+nasm $1.s -l $1.lst
